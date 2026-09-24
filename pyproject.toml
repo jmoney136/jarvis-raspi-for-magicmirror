@@ -1,0 +1,12 @@
+[project]
+name = "jarvis-pi"
+version = "0.1.0"
+description = "Offline voice assistant optimized for Raspberry Pi 4"
+requires-python = ">=3.11"
+dependencies = ["websockets>=14,<16"]
+
+[project.scripts]
+jarvis = "jarvis.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

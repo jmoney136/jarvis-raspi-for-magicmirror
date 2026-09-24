@@ -1,0 +1,58 @@
+.jarvis-display {
+    min-width: 260px;
+    padding: 10px 14px;
+    border-left: 3px solid rgba(80, 210, 255, 0.7);
+    background: rgba(0, 15, 28, 0.45);
+    transition: opacity 180ms ease, border-color 180ms ease;
+}
+
+.jarvis-indicator {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #6b7280;
+    vertical-align: middle;
+}
+
+.jarvis-listening,
+.jarvis-thinking {
+    background: #ffd166;
+    box-shadow: 0 0 12px #ffd166;
+    animation: jarvis-pulse 1s ease-in-out infinite;
+}
+
+.jarvis-speaking {
+    background: #4dd4ac;
+    box-shadow: 0 0 12px #4dd4ac;
+}
+
+.jarvis-weather,
+.jarvis-calendar {
+    background: #70b7ff;
+    box-shadow: 0 0 10px #70b7ff;
+}
+
+.jarvis-error {
+    background: #ef476f;
+}
+
+.jarvis-status {
+    letter-spacing: 0.12em;
+}
+
+.jarvis-text {
+    max-width: 420px;
+    margin-top: 6px;
+    white-space: normal;
+}
+
+.jarvis-info {
+    margin-top: 4px;
+    opacity: 0.85;
+}
+
+@keyframes jarvis-pulse {
+    50% { opacity: 0.35; transform: scale(0.75); }
+}

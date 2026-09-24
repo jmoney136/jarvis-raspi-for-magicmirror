@@ -1,0 +1,7 @@
+{
+  "name": "mmm-jarvis-display",
+  "private": true,
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
