@@ -5,15 +5,15 @@
 
   # 1. System Updates and Dependencies
   echo "Updating system packages..."
-  sudo apt update -y
-  sudo apt upgrade -y
+  sudo apt update
+  sudo apt upgrade 
 
   echo "Installing necessary dependencies..."
   # Install core dependencies for a Raspberry Pi setup
   sudo apt install -y git python3 python3-pip
 
   # 2. Repository Cloning
-  REPO_URL="[PLACEHOLDER_REPO_URL_PI1]"
+  REPO_URL="https://github.com/jmoney136/jarvis-raspi-for-magicmirror.git"
   REPO_DIR="/opt/jarvis_pi1"
 
   echo "Cloning Jarvis repository from: $REPO_URL"
